@@ -1,0 +1,36 @@
+.iconAddToCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    opacity: 0;
+    animation-name: addToCart;
+    transition: all .5s;
+}
+@keyframes addToCart {
+    0%  {opacity: 0;}
+    10%  {opacity: .1;}
+    20%  {opacity: .2;}
+    30%  {opacity: .3;}
+    40%  {opacity: .4;}
+    50% {opacity: .5;}
+    60% {opacity: .6;}
+    70% {opacity: .7;}
+    80% {opacity: .8;}
+    90% {opacity: .9;}
+    100% {opacity: 1;}
+}
+.iconAddToCart svg{
+    font-size: 30px;
+    background-color: rgb(46, 47, 49);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+}
+.iconAddToCart svg:hover {
+    transform: scale(1.1);
+}

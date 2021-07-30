@@ -1,0 +1,84 @@
+.icon-search{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #000;
+
+    width: 40px;
+    height: 40px;
+    right: 0;
+
+    clip-path: circle(50%);
+    -webkit-clip-path: circle(50%);
+
+    background-color: #2f3640;
+    color: rgb(255, 0, 0);
+
+    cursor: pointer;
+}
+.icon-search svg{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrap-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 10px;
+}
+.search{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+    
+}
+.input-search input{
+    height: 39px;
+    width: 35px;
+
+    border: 1px solid #000;
+    border-radius: 25px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 1s linear;
+}
+.search:hover .input-search input{
+    animation: searchProduct 1s;
+    -moz-animation: searchProduct 1s;
+    -webkit-animation: searchProduct 1s;
+    -o-animation: searchProduct 1s;
+
+    width: 220px;
+
+    padding: 0 45px 0 15px;
+
+
+}
+@keyframes searchProduct{
+    from{width: 35px;}
+    to{width: 220px;}
+}
+@-moz-keyframes searchProduct {
+    from{width: 35px;}
+    to{width: 220px;}
+}
+
+@-webkit-keyframes searchProduct {
+    from{width: 35px;}
+    to{width: 220px;}
+}
+
+@-o-keyframes searchProduct {
+    from{width: 35px;}
+    to{width: 220px;}
+}
